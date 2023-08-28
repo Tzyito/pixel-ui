@@ -1,0 +1,38 @@
+{
+  "name": "@pixel-ui/components",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "pixel-ui components",
+  "author": "Tzito <https://github.com/tzyito>",
+  "license": "MIT",
+  "homepage": "https://github.com/tzyito/pixle-ui/blob/main/packages/components/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tzyito/pixle-ui.git",
+    "directory": "packages/components"
+  },
+  "bugs": {
+    "url": "https://github.com/tzyito/pixle-ui/issues"
+  },
+  "keywords": [
+    "pixel-ui",
+    "@pixel-ui/components"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/components.js",
+      "require": "./dist/components.umd.cjs"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "main": "./dist/components.umd.cjs",
+  "module": "./dist/components.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "stub": "vue-tsc --declaration --emitDeclarationOnly && vite build --watch",
+    "build": "vue-tsc --declaration --emitDeclarationOnly && vite build"
+  }
+}

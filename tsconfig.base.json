@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "jsx": "preserve",
+    "target": "esnext",
+    "module": "esnext",
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "allowJs": false,
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "removeComments": false,
+    "types": [
+      "node",
+      "vite/client"
+    ]
+  }
+}

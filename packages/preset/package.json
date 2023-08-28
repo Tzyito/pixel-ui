@@ -1,0 +1,41 @@
+{
+  "name": "@pixel-ui/preset",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "pixel-ui preset config",
+  "author": "Tzito <https://github.com/tzyito>",
+  "license": "MIT",
+  "homepage": "https://github.com/tzyito/pixle-ui/blob/main/packages/preset/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tzyito/pixle-ui.git",
+    "directory": "packages/preset"
+  },
+  "bugs": {
+    "url": "https://github.com/tzyito/pixle-ui/issues"
+  },
+  "keywords": [
+    "unocss",
+    "@pixel-ui/components",
+    "@pixel-ui/preset",
+    "pixel-ui"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/preset.js",
+      "require": "./dist/preset.umd.cjs"
+    }
+  },
+  "main": "./dist/preset.umd.cjs",
+  "module": "./dist/preset.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "stub": "vite build --watch",
+    "build": "vite build"
+  }
+}

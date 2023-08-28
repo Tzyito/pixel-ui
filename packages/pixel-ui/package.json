@@ -1,0 +1,40 @@
+{
+  "name": "pixel-ui",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "pixel-ui core lib",
+  "author": "Tzito <https://github.com/tzyito>",
+  "license": "MIT",
+  "homepage": "https://github.com/tzyito/pixle-ui/blob/main/packages/pixel-ui/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tzyito/pixle-ui.git",
+    "directory": "packages/preset"
+  },
+  "bugs": {
+    "url": "https://github.com/tzyito/pixle-ui/issues"
+  },
+  "keywords": [
+    "unocss",
+    "pixel-ui"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/pixel-ui/index.d.ts",
+      "import": "./dist/pixel-ui.js",
+      "require": "./dist/pixel-ui.umd.cjs"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "main": "./dist/pixel-ui.umd.cjs",
+  "module": "./dist/pixel-ui.js",
+  "types": "./dist/pixel-ui/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "stub": "vite build --watch",
+    "build": "vite build"
+  }
+}
