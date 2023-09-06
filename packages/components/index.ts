@@ -1,3 +1,4 @@
-import 'uno.css'
+import 'uno.css';
 
-export * from './input'
+export * from './input';
+export * from './button';

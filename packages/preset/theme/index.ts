@@ -1,9 +1,19 @@
-import type { Theme } from '@unocss/preset-uno'
-import { getPresetColors } from '../colors'
+import { Theme } from './types';
+import { getPresetColors } from '../colors';
 
 export default {
   colors: getPresetColors(),
   fontFamily: {
     pixel: 'Press Start 2P',
   },
-} as Theme
+  boxShadow: {
+    light: {
+      DEFAULT: '',
+      primary: '#fff',
+    },
+    dark: {
+      DEFALUT: '',
+      primary: '',
+    },
+  },
+} satisfies Theme;

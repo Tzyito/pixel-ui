@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P');
-
+/* @font-face {
+  font-family: 'pixel-zh';
+  src: url('./assets/pixel-fonts/pixel-fonts-zh_cn.woff2');
+  font-weight: bold;
+  font-size: inherit;
+} */
 * {
   font-family: 'Press Start 2P';
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
 }

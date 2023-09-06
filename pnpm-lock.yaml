@@ -8,12 +8,14 @@ importers:
       '@pixel-ui/components': workspace:*
       '@pixel-ui/preset': workspace:*
       '@rollup/pluginutils': ^5.0.3
+      '@types/fs-extra': ^11.0.1
       '@types/node': ^20.5.1
       '@unocss/preset-uno': ^0.55.2
       '@vitejs/plugin-vue': ^4.2.3
       '@vue/compiler-sfc': ^3.3.4
       bumpp: ^9.2.0
       eslint: ^8.48.0
+      fs-extra: ^11.1.1
       lint-staged: ^14.0.1
       npm-run-all: ^4.1.5
       pixel-ui: workspace:*
@@ -30,12 +32,14 @@ importers:
     devDependencies:
       '@antfu/eslint-config': 0.41.0_d5jf7ovzqjkgnkbqzv5x4lk65a
       '@rollup/pluginutils': 5.0.3
+      '@types/fs-extra': 11.0.1
       '@types/node': 20.5.1
       '@unocss/preset-uno': 0.55.2
       '@vitejs/plugin-vue': 4.3.3_vite@4.4.9+vue@3.3.4
       '@vue/compiler-sfc': 3.3.4
       bumpp: 9.2.0
       eslint: 8.48.0
+      fs-extra: 11.1.1
       lint-staged: 14.0.1
       npm-run-all: 4.1.5
       rimraf: 5.0.1
@@ -597,8 +601,21 @@ packages:
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
     dev: true
 
+  /@types/fs-extra/11.0.1:
+    resolution: {integrity: sha512-MxObHvNl4A69ofaTRU8DFqvgzzv8s9yRtaPPm5gud9HDNvpB3GPQFvNuTWAI59B9huVGV5jXYJwbCsmBsOGYWA==}
+    dependencies:
+      '@types/jsonfile': 6.1.1
+      '@types/node': 20.5.1
+    dev: true
+
   /@types/json-schema/7.0.12:
     resolution: {integrity: sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==}
+    dev: true
+
+  /@types/jsonfile/6.1.1:
+    resolution: {integrity: sha512-GSgiRCVeapDN+3pqA35IkQwasaCh/0YFH5dEF6S88iDvEn901DjOeH3/QPY+XYP1DFzDZPvIvfeEgk+7br5png==}
+    dependencies:
+      '@types/node': 20.5.1
     dev: true
 
   /@types/mdast/3.0.12:
@@ -2230,6 +2247,15 @@ packages:
       signal-exit: 4.1.0
     dev: true
 
+  /fs-extra/11.1.1:
+    resolution: {integrity: sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==}
+    engines: {node: '>=14.14'}
+    dependencies:
+      graceful-fs: 4.2.11
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: true
+
   /fs-minipass/2.1.0:
     resolution: {integrity: sha512-V/JgOLFCS+R6Vcq0slCuaeWEdNC3ouDlJMNIsacH2VtALiu9mV4LPrHc5cDl8k5aw6J8jwgWWpiTo5RYhmIzvg==}
     engines: {node: '>= 8'}
@@ -2767,6 +2793,14 @@ packages:
 
   /jsonc-parser/3.2.0:
     resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==}
+    dev: true
+
+  /jsonfile/6.1.0:
+    resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
+    dependencies:
+      universalify: 2.0.0
+    optionalDependencies:
+      graceful-fs: 4.2.11
     dev: true
 
   /keyv/4.5.3:
@@ -3904,6 +3938,11 @@ packages:
     resolution: {integrity: sha512-3faScn5I+hy9VleOq/qNbAd6pAx7iH5jYBMS9I1HgQVijz/4mv5Bvw5iw1sC/90CODiKo81G/ps8AJrISn687g==}
     dependencies:
       '@types/unist': 2.0.7
+    dev: true
+
+  /universalify/2.0.0:
+    resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
+    engines: {node: '>= 10.0.0'}
     dev: true
 
   /unocss/0.55.2_vite@4.4.9:
