@@ -4,12 +4,13 @@ import {
   presetUno,
   transformerDirectives,
   transformerVariantGroup,
-} from 'unocss'
-import { getCSSPreflights, presetPixel } from '@pixel-ui/preset'
+} from 'unocss';
+import { getCSSPreflights, presetPixel, getSafeList } from '@pixel-ui/preset';
 
 export default defineConfig({
   presets: [presetUno({ preflight: false }), presetAttributify(), presetPixel()],
   transformers: [transformerDirectives(), transformerVariantGroup()],
+  safelist: [...getSafeList()],
   preflights: [
     {
       layer: 'base',
@@ -23,5 +24,5 @@ export default defineConfig({
     `,
     },
   ],
-  configDeps: ['./index.ts'],
-})
+  configDeps: ['../preset/dist/preset.js'],
+});

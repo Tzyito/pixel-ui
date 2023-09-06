@@ -1,14 +1,17 @@
-const prefix = '--pixel'
-export interface Colors {
-  [key: string]: (Colors & { DEFAULT?: string }) | string
-}
+import { Colors } from '../theme/types';
+
+const prefix = '--pixel';
 export const colors = {
   inherit: 'inherit',
   current: 'currentColor',
   transparent: 'transparent',
-  black: '#000',
-  white: '#fff',
-  primary: '#6b7280',
+  black: '#403e3e',
+  white: '#fff5f5',
+  base: 'fff5f5',
+  primary: '#92CC41',
+  success: '#209cee',
+  warning: '#f7d51d',
+  error: '#e76e55',
   rose: {
     50: '#fff1f2',
     100: '#ffe4e6',
@@ -322,77 +325,74 @@ export const colors = {
     950: '#080808',
   },
   get lightblue() {
-    return this.sky
+    return this.sky;
   },
   get lightBlue() {
-    return this.sky
+    return this.sky;
   },
   get warmgray() {
-    return this.stone
+    return this.stone;
   },
   get warmGray() {
-    return this.stone
+    return this.stone;
   },
   get truegray() {
-    return this.neutral
+    return this.neutral;
   },
   get trueGray() {
-    return this.neutral
+    return this.neutral;
   },
   get coolgray() {
-    return this.gray
+    return this.gray;
   },
   get coolGray() {
-    return this.gray
+    return this.gray;
   },
   get bluegray() {
-    return this.slate
+    return this.slate;
   },
   get blueGray() {
-    return this.slate
+    return this.slate;
   },
-} as Colors
-export const persetColorsVariant
-  // assign default color, and color shortcuts
-  = Object.values(colors).forEach((color) => {
-    if (typeof color !== 'string' && color !== undefined) {
-      // color.DEFAULT = color.DEFAULT || (color[400] as string);
-      Object.keys(color).forEach((key) => {
-        const short = +key / 100
-        if (short === Math.round(short))
-          color[short] = color[key]
-      })
-    }
-  })
+} as Colors;
 
-const darkColors = colors
+// assign default color, and color shortcuts
+Object.values(colors).forEach((color) => {
+  if (typeof color !== 'string' && color !== undefined) {
+    color.DEFAULT = color.DEFAULT || (color[400] as string);
+    Object.keys(color).forEach((key) => {
+      const short = +key / 100;
+      if (short === Math.round(short)) color[short] = color[key];
+    });
+  }
+});
+
+const darkColors = colors;
 export function getCSSPreflights(mode: 'light' | 'dark' = 'light') {
-  let css = ''
-  const theme = mode === 'light' ? colors : darkColors
+  let css = '';
+  const theme = mode === 'light' ? colors : darkColors;
   Object.keys(theme).forEach((k) => {
     if (typeof theme[k] === 'string') {
-      css = `${css}\n` + `${prefix}-${k}: ${theme[k]};`
-    }
-    else {
+      css = `${css}\n` + `${prefix}-${k}: ${theme[k]};`;
+    } else {
       Object.keys(theme[k]).forEach((v) => {
-        css = `${css}\n` + `${prefix}-${k}-${v}: ${(theme[k] as Colors)[v]};`
-      })
+        css = `${css}\n` + `${prefix}-${k}-${v}: ${(theme[k] as Colors)[v]};`;
+      });
     }
-  })
-  return css
+  });
+  return css;
 }
 /** generate preset theme colors */
 export function getPresetColors() {
-  const themeColorsVariable = Object.create(null)
+  const themeColorsVariable = Object.create(null);
   Object.keys(colors).forEach((k) => {
     if (typeof colors[k] === 'string') {
-      themeColorsVariable[k] = `var(${prefix}-${k})`
-    }
-    else {
+      themeColorsVariable[k] = `var(${prefix}-${k})`;
+    } else {
       Object.keys(colors[k]).forEach((v) => {
-        themeColorsVariable[`${k}-${v}`] = `var(${prefix}-${k}-${v})`
-      })
+        themeColorsVariable[`${k}-${v}`] = `var(${prefix}-${k}-${v})`;
+      });
     }
-  })
-  return themeColorsVariable
+  });
+  return themeColorsVariable;
 }

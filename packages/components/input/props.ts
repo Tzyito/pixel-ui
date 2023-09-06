@@ -1,4 +1,4 @@
-import type { ExtractPublicPropTypes } from 'vue'
+import type { ExtractPublicPropTypes } from 'vue';
 
 export const InputProps = defineProps({
   foo: String,
@@ -12,5 +12,5 @@ export const InputProps = defineProps({
     type: String,
   },
   arr: Array,
-})
-export type OCardProps = ExtractPublicPropTypes<typeof InputProps>
+});
+export type OInputProps = ExtractPublicPropTypes<typeof InputProps>;

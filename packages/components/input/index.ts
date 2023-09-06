@@ -1,5 +1,5 @@
-import { withInstall } from '../hooks'
-import Input from './src/index.vue'
+import { withInstall } from '../hooks';
+import Input from './index.vue';
 
-export const PxInput = withInstall(Input)
-export default PxInput
+export const PxInput = withInstall(Input);
+export default PxInput;

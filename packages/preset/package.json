@@ -23,14 +23,12 @@
   "sideEffects": false,
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
       "import": "./dist/preset.js",
       "require": "./dist/preset.umd.cjs"
     }
   },
   "main": "./dist/preset.umd.cjs",
   "module": "./dist/preset.js",
-  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],

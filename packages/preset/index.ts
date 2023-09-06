@@ -1,8 +1,8 @@
-import type { Preset } from 'unocss'
-import shortcuts from './shortcuts'
-import theme from './theme'
-import variants from './variants'
-import { rules } from './rules'
+import type { Preset } from 'unocss';
+import shortcuts from './shortcuts';
+import theme from './theme';
+import variants from './variants';
+import { rules } from './rules';
 
 export function presetPixel(): Preset {
   return {
@@ -11,9 +11,10 @@ export function presetPixel(): Preset {
     theme,
     rules,
     variants,
-  }
+  };
 }
 
-export default presetPixel
+export default presetPixel;
 
-export * from './colors'
+export * from './colors';
+export * from './shortcuts';

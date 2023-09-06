@@ -1,5 +1,5 @@
-import { PxInput } from '@pixel-ui/components'
+import { PxInput, PxButton } from '@pixel-ui/components';
 
-export default [PxInput]
+export default [PxInput, PxButton];
 
-export * from '@pixel-ui/components'
+export * from '@pixel-ui/components';
