@@ -22,7 +22,7 @@ importers:
       rimraf: ^5.0.1
       typescript: ^5.0.2
       unocss: ^0.55.2
-      vite: ^4.4.9
+      vite: ^4.4.12
       vue: ^3.3.4
       vue-tsc: ^1.8.8
     dependencies:
@@ -35,7 +35,7 @@ importers:
       '@types/fs-extra': 11.0.1
       '@types/node': 20.5.1
       '@unocss/preset-uno': 0.55.2
-      '@vitejs/plugin-vue': 4.3.3_vite@4.4.9+vue@3.3.4
+      '@vitejs/plugin-vue': 4.3.3_vite@4.4.12+vue@3.3.4
       '@vue/compiler-sfc': 3.3.4
       bumpp: 9.2.0
       eslint: 8.48.0
@@ -44,8 +44,8 @@ importers:
       npm-run-all: 4.1.5
       rimraf: 5.0.1
       typescript: 5.1.6
-      unocss: 0.55.2_vite@4.4.9
-      vite: 4.4.9_@types+node@20.5.1
+      unocss: 0.55.2_vite@4.4.12
+      vite: 4.4.12_@types+node@20.5.1
       vue: 3.3.4
       vue-tsc: 1.8.8_typescript@5.1.6
 
@@ -833,7 +833,7 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /@unocss/astro/0.55.2_vite@4.4.9:
+  /@unocss/astro/0.55.2_vite@4.4.12:
     resolution: {integrity: sha512-cSzBKPEveZZQDZp5bq0UlL8CVvzB/1LsgZmZufxi9oMMjMJYqzfTkKg5z65GcP82Xp5c0N3KKkl/R6I+/7Iwvw==}
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0
@@ -843,8 +843,8 @@ packages:
     dependencies:
       '@unocss/core': 0.55.2
       '@unocss/reset': 0.55.2
-      '@unocss/vite': 0.55.2_vite@4.4.9
-      vite: 4.4.9_@types+node@20.5.1
+      '@unocss/vite': 0.55.2_vite@4.4.12
+      vite: 4.4.12_@types+node@20.5.1
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -1005,7 +1005,7 @@ packages:
       '@unocss/core': 0.55.2
     dev: true
 
-  /@unocss/vite/0.55.2_vite@4.4.9:
+  /@unocss/vite/0.55.2_vite@4.4.12:
     resolution: {integrity: sha512-JEyEaJt8D+Ed3Z8GDQ0hMWqKsB47/DoS+aPzDoXSIVozgi8seHtfSChBOBUSgcCrozfBVp42YHbYYyloDkb2Yw==}
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0
@@ -1020,19 +1020,19 @@ packages:
       chokidar: 3.5.3
       fast-glob: 3.3.1
       magic-string: 0.30.3
-      vite: 4.4.9_@types+node@20.5.1
+      vite: 4.4.12_@types+node@20.5.1
     transitivePeerDependencies:
       - rollup
     dev: true
 
-  /@vitejs/plugin-vue/4.3.3_vite@4.4.9+vue@3.3.4:
+  /@vitejs/plugin-vue/4.3.3_vite@4.4.12+vue@3.3.4:
     resolution: {integrity: sha512-ssxyhIAZqB0TrpUg6R0cBpCuMk9jTIlO1GNSKKQD6S8VjnXi6JXKfUXjSsxey9IwQiaRGsO1WnW9Rkl1L6AJVw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.4.9_@types+node@20.5.1
+      vite: 4.4.12_@types+node@20.5.1
       vue: 3.3.4
     dev: true
 
@@ -3945,7 +3945,7 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unocss/0.55.2_vite@4.4.9:
+  /unocss/0.55.2_vite@4.4.12:
     resolution: {integrity: sha512-+C8tFUFIEv40DpEhjA/Yv+RB5HZumkWiON2OlPyrbzapQ8x60F9TUwUS3pw7MlpxI6GfTCYwXKEE6DTGCm1SLA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -3957,7 +3957,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      '@unocss/astro': 0.55.2_vite@4.4.9
+      '@unocss/astro': 0.55.2_vite@4.4.12
       '@unocss/cli': 0.55.2
       '@unocss/core': 0.55.2
       '@unocss/extractor-arbitrary-variants': 0.55.2
@@ -3976,8 +3976,8 @@ packages:
       '@unocss/transformer-compile-class': 0.55.2
       '@unocss/transformer-directives': 0.55.2
       '@unocss/transformer-variant-group': 0.55.2
-      '@unocss/vite': 0.55.2_vite@4.4.9
-      vite: 4.4.9_@types+node@20.5.1
+      '@unocss/vite': 0.55.2_vite@4.4.12
+      vite: 4.4.12_@types+node@20.5.1
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -4000,8 +4000,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite/4.4.9_@types+node@20.5.1:
-    resolution: {integrity: sha512-2mbUn2LlUmNASWwSCNSJ/EG2HuSRTnVNaydp6vMCm5VIqJsjMfbIWtbH2kDuwUVW5mMUKKZvGPX/rqeqVvv1XA==}
+  /vite/4.4.12_@types+node@20.5.1:
+    resolution: {integrity: sha512-KtPlUbWfxzGVul8Nut8Gw2Qe8sBzWY+8QVc5SL8iRFnpnrcoCaNlzO40c1R6hPmcdTwIPEDkq0Y9+27a5tVbdQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
